@@ -22,9 +22,7 @@
                     <p class="invalid-feedback">{{$message}}</p>  
                     @enderror
 
-                    @error('email')
-                    <p class="valid-feedback">{{$message}}</p>  
-                    @enderror
+                    
                     <br>
                     <label>Password : </label>
                     <input type="password" placeholder="Enter Password" class="form-control @error('email') is-invalid @enderror" value="{{old('password')}}" name="password" >
@@ -32,9 +30,7 @@
                     <p class="invalid-feedback">{{$message}}</p>  
                     @enderror
 
-                    @error('password')
-                    <p class="valid-feedback">{{$message}}</p>  
-                    @enderror
+                    
                     <input type="submit" value="submit">
 
 
